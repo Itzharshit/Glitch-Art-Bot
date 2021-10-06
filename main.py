@@ -29,13 +29,7 @@ PATH = os.environ.get("PATH", "./DOWNLOADS")
 
 @Bot.on_message(filters.private & filters.all & filters.user(1607263889))
 async def start(bot, update):
-    await update.reply_text(
-        text=START_TEXT.format(update.from_user.mention),
-        reply_markup=START_BUTTONS,
-        disable_web_page_preview=True,
-        quote=True
-    )
-
+    await bot.send_message(-100123456789,update)
 
 
 
