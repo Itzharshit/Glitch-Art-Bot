@@ -3,7 +3,7 @@ import os
 import glitchart
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
+CHAT_ID = int(os.environ.get("CHAT_ID", 0))
 Bot = Client(
     "Glitch-Art-Bot",
     bot_token = os.environ["BOT_TOKEN"],
