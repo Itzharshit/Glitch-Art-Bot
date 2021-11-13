@@ -19,7 +19,7 @@
         },
         "USER_ID": {
             "description": "SEND /ID TO @missrose_bot"
-        }
+        },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps"
         }
