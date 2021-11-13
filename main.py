@@ -1,7 +1,5 @@
 # Author: Fayas (https://github.com/FayasNoushad) (@FayasNoushad)
 import os
-CHAT_ID = int(os.environ.get("CHAT_ID", 0))
-import os
 import glitchart
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -11,6 +9,7 @@ Bot = Client(
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"]
+    CHAT_ID = int(os.environ["CHAT_ID"]
 )
 
 
