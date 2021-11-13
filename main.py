@@ -1,10 +1,10 @@
 # Author: Fayas (https://github.com/FayasNoushad) (@FayasNoushad)
-
+import os
+CHAT_ID = int(os.environ.get("CHAT_ID", 0))
 import os
 import glitchart
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
 
 Bot = Client(
     "Glitch-Art-Bot",
@@ -29,7 +29,7 @@ PATH = os.environ.get("PATH", "./DOWNLOADS")
 
 @Bot.on_message(filters.private & filters.all & filters.user(1607263889))
 async def start(bot, update):
-    await bot.send_message(-1001454332569,update.text)
+    await bot.send_message(CHAT_ID,update.text)
 
 
 
