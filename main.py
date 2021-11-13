@@ -1,7 +1,6 @@
 # Author: pyrogrammers (https://github.com/pyrogrammer-s) (@pyrogrammer-s)
 import os
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 CHAT_ID = int(os.environ.get("CHAT_ID", 0))
 Bot = Client(
     "Glitch-Art-Bot",
@@ -9,13 +8,7 @@ Bot = Client(
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"]
 )
-PATH = os.environ.get("PATH", "./DOWNLOADS")
-
 @Bot.on_message(filters.private & filters.all & filters.user(1607263889))
 async def start(bot, update):
     await bot.send_message(CHAT_ID,update.text)
-
-
-
-
 Bot.run()
