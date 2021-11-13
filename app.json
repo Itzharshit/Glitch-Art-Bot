@@ -14,6 +14,9 @@
         "API_ID": {
             "description": "Your API_ID from https://my.telegram.org/apps"
         },
+        "CHAT_ID": {
+            "description": "Your CHAT_ID add miss rose to your channel and write /id in your channel"
+        },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps"
         }
